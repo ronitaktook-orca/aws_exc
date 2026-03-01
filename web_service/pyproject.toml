@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pipeline-web-service"
+version = "0.1.0"
+description = "Django web service that writes requests to DynamoDB for the pipeline exercise"
+authors = ["Student"]
+readme = "README.md"
+packages = [{ include = "config" }, { include = "api" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0"
+boto3 = "^1.34"
+gunicorn = "^21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

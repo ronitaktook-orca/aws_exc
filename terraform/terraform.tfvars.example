@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and set your values.
+
+aws_region   = "us-east-1"
+project_name = "pipeline"
+phone_number = "+1234567890"   # E.164 format for SNS SMS
+
+# Optional overrides
+# vpc_cidr             = "10.0.0.0/16"
+# ecs_desired_count    = 2
+# dynamodb_table_name  = "pipeline-requests"
+# s3_results_bucket_prefix = "pipeline-results"
+# ecr_repository_name  = "pipeline-web-service"
+# web_service_image_tag = "latest"
